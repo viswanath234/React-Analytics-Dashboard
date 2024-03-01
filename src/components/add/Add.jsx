@@ -1,14 +1,14 @@
-import { GridColDef } from "@mui/x-data-grid";
 import "./add.scss";
 
-type Props = {
-  slug: string;
-  columns: GridColDef[];
-  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-};
+// type Props = {
+//   slug: string;
+//   columns: GridColDef[];
+//   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+// };
 
-const Add = (props: Props) => {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+const Add = (props) => {
+  // : React.FormEvent<HTMLFormElement>
+  const handleSubmit = (e) => {
     e.preventDefault();
     props.setOpen(false);
   };
